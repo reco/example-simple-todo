@@ -1,20 +1,19 @@
 {
-  "name": "heliosrx-example-fitness-tracker2",
+  "name": "heliosrx-example-simple-todo",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "rules": "npm run rules:make && npm run rules:compile && npm run rules:deploy",
-    "rules:compile": "firebase-bolt database.rules.bolt",
+    "rules": "npm run rules:make && npm run rules:deploy",
     "rules:deploy": "firebase deploy --only database",
-    "rules:make": "helios rules --write database.rules.bolt"
+    "rules:make": "helios rules --write database.rules.bolt && firebase-bolt database.rules.bolt"
   },
   "dependencies": {
     "core-js": "^3.4.4",
     "firebase": "^7.6.1",
-    "heliosrx": "https://github.com/tw00/heliosrx-private.git",
+    "heliosrx": "^0.1.0",
     "vue": "^2.6.10",
     "vue-router": "^3.1.3",
     "vuex": "^3.1.2"

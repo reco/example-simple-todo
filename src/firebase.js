@@ -9,13 +9,13 @@ import "firebase/database";
 
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyC9K5TujOt-tIN7PD_1pqW0sCZ71mvOhBU",
-  authDomain: "heliosrx-example-tracker.firebaseapp.com",
-  databaseURL: "https://heliosrx-example-tracker.firebaseio.com",
-  projectId: "heliosrx-example-tracker",
-  storageBucket: "heliosrx-example-tracker.appspot.com",
-  messagingSenderId: "980189815310",
-  appId: "1:980189815310:web:34b23edeb371eb9d42925f"
+  apiKey: "AIzaSyA-0-IaxG70yiVkHp7YENQly17xojCrUpY",
+  authDomain: "heliosrx-demo1.firebaseapp.com",
+  databaseURL: "https://heliosrx-demo1.firebaseio.com",
+  projectId: "heliosrx-demo1",
+  storageBucket: "heliosrx-demo1.appspot.com",
+  messagingSenderId: "208675606741",
+  appId: "1:208675606741:web:48f80d31c8ae96b21f125c"
 };
 
 // Initialize Firebase

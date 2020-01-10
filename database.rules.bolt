@@ -111,7 +111,7 @@ type Task {
 
 
 
-// SOURCE: /Users/twe/Projects/heliosrx-example-fitness-tracker/rules/rules.bolt
+// SOURCE: /Users/twe/Projects/heliosrx-example-simple-todo/rules/rules.bolt
 // file: db/rules/rules.bolt
 path /tasks is Task[] {
   read() { true }
