@@ -1,7 +1,7 @@
 # heliosRX example project: To-Do App
 ## Demo
 
-- [https://heliosrx-example-tracker.web.app/](https://heliosrx-example-tracker.web.app/)
+- [https://heliosrx-demo1.web.app](https://heliosrx-demo1.web.app/)
 
 ![Example](./img/example.png)
 
