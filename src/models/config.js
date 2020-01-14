@@ -1,4 +1,4 @@
-import GenericStore from 'heliosrx/src/store'
+import { GenericStore } from 'heliosrx'
 import taskModelDefinition from './task';
 
 export const task = new GenericStore(
