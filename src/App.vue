@@ -2,7 +2,8 @@
   <div id="app">
     <h1 style="text-align: center">To-Do App</h1>
     <div id="nav">
-      <router-link to="/">Home</router-link> |
+      <router-link to="/example-nice">Example (nice)</router-link> |
+      <router-link to="/example-readme">Example README</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
