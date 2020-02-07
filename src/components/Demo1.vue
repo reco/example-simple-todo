@@ -12,6 +12,7 @@
         <a href="#" @click.prevent="deleteItem( task )">
           <i class="icon ion-md-trash" />
         </a>
+        <time class="time">{{task.createdAt|format}}</time>
       </li>
     </ul>
     <div v-else class="loading">
@@ -24,6 +25,8 @@
 </template>
 
 <script>
+import { moment } from 'heliosrx'
+
 export default {
   data() {
     return {
@@ -40,20 +43,24 @@ export default {
       this.$models.task.add({ title: this.title });
       this.title = "";
     },
-    // $models.user.subscribeNode() // /user/{userId}
-    // $models.task.subscribeList()
-    // $models.task.queryList({ user })
     deleteItem( task ) {
-      // /user/{userId}/task/{taskId}
       this.$models.task.remove( task.$id );
     },
     checkTask( task ) {
-      // task.update({ isDone: !task.isDone })
       task.update({ isDone: !task.isDone })
+
+      // - or -
 
       // this.$models.task.update( task.$id, {
       //   isDone: !task.isDone
       // })
+    }
+  },
+  filters: {
+    format(value) {
+      return moment.isMoment( value )
+        ? value.calendar()
+        : 'N/A'
     }
   }
 }
@@ -104,6 +111,13 @@ export default {
   font-size: 20pt;
   min-height: 140px;
   margin-top: 100px;
+}
+
+.todo-list .time {
+  float: right;
+  font-size: 50%;
+  line-height: 37px;
+  color: grey;
 }
 
 .ion-spin {
